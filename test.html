@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <p>First</p>
+    <p>Second</p>
+    <p>Third</p>
+    <p>Fourth</p>
+    <p>Fifth</p>
+    <div class="hello">Hello</div>
+    <button id="showPsBtn">Show Paragraphs</button>
+    <script src="sticDOM.js"></script>
+    <script>
+        sticDOM("p").hide();
+        sticDOM(".hello")
+            .on('mouseover', function() {
+                sticDOM(".hello").highlight("#FFCC00", "#FFFFFF");
+            })
+            .on("mouseout", function() {
+                sticDOM(".hello").highlight("#FFFFFF", "#000000");
+            });;
+        sticDOM("#showPsBtn").on('click', function() {
+            sticDOM("p").show();
+        });
+    </script>
+</body>
+
+</html>
