@@ -10,13 +10,13 @@
 
     //Create a prototype objet for every selection
     var MyDOM = function(selector) {
-        //Normally this part should be more complex, but this example it is enough
+        //Normally this part should be more complex, but for this example it is enough
         this.els = document.querySelectorAll(selector);
     }
 
     /* 
      * Add methods to manipulate the selected elements.
-     * It is important that every method return this, i.e. the selected element(s), in order to chain manipulations
+     * It is important that every method return this, i.e. the selected element(s), so to allow chain manipulations
      */
 
     //Show all the elements selected
